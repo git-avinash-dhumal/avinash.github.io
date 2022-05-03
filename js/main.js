@@ -126,18 +126,6 @@ jQuery(document).ready(function ($) {
     ];
     var myDoughnut = new Chart(document.getElementById("api").getContext("2d")).Doughnut(doughnutData);
 
-    // net Chart
-    var doughnutData = [{
-        value: 80,
-        color: "#1abc9c"
-    },
-    {
-        value: 20,
-        color: "#ecf0f1"
-    }
-    ];
-    var myDoughnut = new Chart(document.getElementById("net").getContext("2d")).Doughnut(doughnutData);
-
     // sql Chart
     var doughnutData = [{
         value: 90,

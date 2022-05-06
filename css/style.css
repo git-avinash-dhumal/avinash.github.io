@@ -392,7 +392,7 @@ sm {
 .portfolio-border {
     /*border-top: 1px dashed #9ea8b1;*/
     padding-top: 20px;
-    margin-top: 20px;
+    margin-top: 20px;   
 }
 
 .photo {
@@ -438,4 +438,14 @@ sm {
 
 .box-shadow {
     box-shadow: 0px 0px 10px 1px #d1d1d1;
+}
+
+@media only screen and (max-width: 780px) {
+    .box-shadow {
+        box-shadow: none !important;
+    }
+
+    .portfolio-border {
+        margin-top: 0px !important;
+    }
 }

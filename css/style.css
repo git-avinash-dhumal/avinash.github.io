@@ -278,7 +278,7 @@ SECTION WRAPS
     }
 
     .desc more {
-        color: #95a5a6;
+        color: #636e6e;
     }
 
 sm {
@@ -392,6 +392,7 @@ sm {
 .portfolio-border {
     /*border-top: 1px dashed #9ea8b1;*/
     padding-top: 20px;
+    margin-top: 20px;
 }
 
 .photo {
@@ -428,4 +429,13 @@ sm {
     height: 12px;
     top: -1px;
     position: relative;
+}
+
+.top-2 {
+    position: relative;
+    top: -2px !important;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 10px 1px #d1d1d1;
 }

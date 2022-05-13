@@ -392,7 +392,7 @@ sm {
 .portfolio-border {
     /*border-top: 1px dashed #9ea8b1;*/
     padding-top: 20px;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
 .photo {
@@ -448,4 +448,8 @@ sm {
     .portfolio-border {
         margin-top: 0px !important;
     }
+}
+
+.mt-10 {
+    margin-bottom: 10px !important;
 }

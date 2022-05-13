@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+    $('#lbl-exp').text(Math.round((monthDiff(new Date('2010-12-01'), new Date()) / 12) * 10) / 10 + '+');
+
     // Smooth scroll for the menu and links with .scrollto classes
     $('.smothscroll').on('click', function (e) {
         e.preventDefault();
@@ -77,6 +79,18 @@ jQuery(document).ready(function ($) {
     }
     ];
     var myDoughnut = new Chart(document.getElementById("angular").getContext("2d")).Doughnut(doughnutData);
+
+    // typescript Chart
+    var doughnutData = [{
+        value: 80,
+        color: "#1abc9c"
+    },
+    {
+        value: 20,
+        color: "#ecf0f1"
+    }
+    ];
+    var myDoughnut = new Chart(document.getElementById("typescript").getContext("2d")).Doughnut(doughnutData);
 
     // net Chart
     var doughnutData = [{
@@ -210,6 +224,42 @@ jQuery(document).ready(function ($) {
     ];
     var myDoughnut = new Chart(document.getElementById("azuredevops").getContext("2d")).Doughnut(doughnutData);
 
+    // servicenow Chart
+    var doughnutData = [{
+        value: 70,
+        color: "#1abc9c"
+    },
+    {
+        value: 30,
+        color: "#ecf0f1"
+    }
+    ];
+    var myDoughnut = new Chart(document.getElementById("servicenow").getContext("2d")).Doughnut(doughnutData);
+
+    // remedy Chart
+    var doughnutData = [{
+        value: 70,
+        color: "#1abc9c"
+    },
+    {
+        value: 30,
+        color: "#ecf0f1"
+    }
+    ];
+    var myDoughnut = new Chart(document.getElementById("remedy").getContext("2d")).Doughnut(doughnutData);
+
+    // pagerduty Chart
+    var doughnutData = [{
+        value: 60,
+        color: "#1abc9c"
+    },
+    {
+        value: 40,
+        color: "#ecf0f1"
+    }
+    ];
+    var myDoughnut = new Chart(document.getElementById("pagerduty").getContext("2d")).Doughnut(doughnutData);
+
     // project Chart
     var doughnutData = [{
         value: 80,
@@ -282,3 +332,11 @@ jQuery(document).ready(function ($) {
     ];
     var myDoughnut = new Chart(document.getElementById("aws").getContext("2d")).Doughnut(doughnutData);
 });
+
+function monthDiff(d1, d2) {
+    var months;
+    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth();
+    months += d2.getMonth();
+    return months <= 0 ? 0 : months;
+};

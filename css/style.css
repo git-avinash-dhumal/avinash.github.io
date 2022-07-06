@@ -453,3 +453,10 @@ sm {
 .mt-10 {
     margin-bottom: 10px !important;
 }
+
+.social-links {
+    height: 20px;
+    top: 5px;
+    position: relative;
+    fill: #1abc9c;
+}

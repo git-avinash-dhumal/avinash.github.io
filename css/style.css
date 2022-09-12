@@ -460,3 +460,10 @@ sm {
     position: relative;
     fill: #1abc9c;
 }
+
+.svg-social-links {
+    height: 25px;
+    top: 9px;
+    position: relative;
+    margin-right: 8px;
+}

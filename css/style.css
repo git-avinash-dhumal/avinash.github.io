@@ -189,7 +189,7 @@ SECTION WRAPS
 #intro {
     background: #2c3e50;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     color: white;
 }
 
@@ -454,16 +454,6 @@ sm {
     margin-bottom: 10px !important;
 }
 
-.social-links {
-    height: 20px;
-    top: 5px;
-    position: relative;
-    fill: #1abc9c;
-}
-
-.svg-social-links {
-    height: 25px;
-    top: 9px;
-    position: relative;
-    margin-right: 8px;
+.r1-logo {
+    height: 12px;
 }

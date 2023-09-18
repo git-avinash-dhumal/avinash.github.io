@@ -2,954 +2,916 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Avinash Dhumal - Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <meta http-equiv="cache-control" content="no-cache">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Favicons -->
-    <link href="img/favicon.png" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>iPortfolio - Avinash Dhumal</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
 
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body data-spy="scroll" data-offset="64" data-target="#section-topbar">
+<body>
 
-    <div id="section-topbar">
-        <div id="topbar-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="dropdown">
-                        <ul id="nav" class="nav">
-                            <li class="menu-item">
-                                <a class="smothscroll" href="#about" title="About"><i class="fa fa-user"></i></a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="smothscroll" href="#resume" title="Resume">
-                                    <i class="fa fa-file-text-o"></i>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="smothscroll" href="#work" title="Works">
-                                    <i class="fa fa-briefcase"></i>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="smothscroll" href="#contact" title="Contact">
-                                    <i class="fa fa-envelope"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <!--/ uL#nav -->
-                    </div>
-                    <!-- /.dropdown -->
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-                    <div class="clear"></div>
-                </div>
-                <!--/.row -->
-            </div>
-            <!--/.container -->
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-            <div class="clear"></div>
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Avinash Dhumal</a></h1>
+        <div class="social-links mt-3 text-center">
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+          <a href="tel:+917798406759" class="call"><i class="bx bi-telephone"></i></a>
+          <a href="mailto:avinash_dhumal@yahoo.com" class="email"><i class="bx bi-envelope-at"></i></a>
+          <a href="https://www.linkedin.com/in/avinash-dhumal/" class="linkedin" target="_blank"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="https://medium.com/@avinash.dhumal" class="medium" target="_blank"><i class="bx bi-medium"></i></a>
+          <a href="https://www.facebook.com/avinash.dhumal.03/" class="facebook" target="_blank"><i
+              class="bx bxl-facebook"></i></a>
+          <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
         </div>
-        <!--/ #topbar-inner -->
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+              <span>Portfolio</span></a></li>
+          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
-    <!--/ #section-topbar -->
+  </header><!-- End Header -->
 
-    <div id="headerwrap">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-12">
-                    <img src="img/photo.jpg" class="photo" />
-                    <h1>Avinash Dhumal</h1>
-                    <h3>Software Engineering Manager | avinash_dhumal@yahoo.com</h3>
-                </div>
-                <!--/.col-lg-12 -->
-            </div>
-            <!--/.row -->
-        </div>
-        <!--/.container -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Avinash Dhumal</h1>
+      <p>I'm <span class="typed" data-typed-items="Engineering Manager, Solution Architect, Developer, Designer"></span>
+      </p>
     </div>
-    <!--/.#headerwrap -->
+  </section><!-- End Hero -->
 
-    <section id="about" name="about">
-        <div id="intro">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-lg-offset-1">
-                        <h5><b><i class="fa fa-user-circle-o top-2" aria-hidden="true"></i> ABOUT</b></h5>
-                    </div>
-                    <div class="col-lg-6">
-                        <p style="text-align: justify;">
-                            Technical people leader with <span id="lbl-exp"></span> years of software architect, design, development, management, and support experience using Azure & AWS Cloud infrastructures. I have developed, managed, and led client, database, and enterprise applications/products on Microsoft Azure, AWS
-                            Cloud and Non-Cloud platforms with Microsoft Technology stack. Currently, I am working as Engineering Manager at R1 RCM Inc.and managing & leading cloud and consumer products.
-                        </p>
-                    </div>
-                    <div class="col-lg-3">
-                        <p>
-                            <a href="https://github.com/git-avinash-dhumal/avinash.github.io/raw/main/cv-avinash-dhumal.pdf" class="icon-file" target="_blank">
-                                <sm>
-                                    <i class="fa fa-download fa-size" aria-hidden="true"></i> <b>DOWNLOAD PDF</b>
-                                </sm>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <!--/.row -->
-            </div>
-            <!--/.container -->
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I am a seasoned <b>Technical People Manager</b> with over <b><span class="exp"></span>+ years</b> of extensive experience in
+            software
+            architecture, design, development, management, and support within Azure and AWS Cloud infrastructures.
+            Throughout my career, I have successfully developed, managed, and provided management and leadership for
+            client, database,
+            and enterprise applications/products, utilizing the Microsoft Technology stack, both in the Azure and AWS
+            Cloud environments, as well as in non-cloud platforms.
+            <br><br>
+            Presently, I hold the position of <b>Engineering Manager</b> at <b>R1 RCM Inc.</b>, where I am responsible
+            for managing
+            and leading the development of patient experience products. My track record demonstrates a strong commitment
+            to delivering innovative solutions while effectively leveraging cloud technologies and Microsoft's robust
+            suite of tools and services.
+          </p>
         </div>
-        <!--/ #intro -->
-    </section>
-
-    <section id="resume" name="resume">
-        <!--EDUCATION DESCRIPTION -->
-        <div class="container desc">
-            <div class="row">
-
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5><b><i class="fa fa-graduation-cap" aria-hidden="true"></i>  EDUCATION</b></h5>
-                </div>
-                <div class="col-lg-6">
-                    <p>
-                        <t>Bachelor of Engineering - I.T.</t><br /> Pune University <br />
-                        <i>3 Years Course</i>
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <p>
-                        <sm><b>JULY 2010</b></sm><br />
-                        <imp>
-                            <sm><i class="fa fa-star-half-o" aria-hidden="true"></i> 65.13 %</sm>
-                        </imp>
-                    </p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p>
-                        <t>Diploma - I.T.</t><br /> MSBTE, Mumbai <br />
-                        <i>3 Years Course</i>
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <p>
-                        <sm><b>JUNE 2007</b></sm><br />
-                        <imp>
-                            <sm><i class="fa fa-star-half-o" aria-hidden="true"></i> 70.17 %</sm>
-                        </imp>
-                    </p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p>
-                        <t>S.S.C.</t><br /> Pune Vidyapeeth <br />
-                        <i>10 Years Course</i>
-                    </p>
-                </div>
-                <div class="col-lg-3">
-                    <p>
-                        <sm><b>JUNE 2004</b></sm><br />
-                        <imp>
-                            <sm><i class="fa fa-star-half-o" aria-hidden="true"></i> 72.80 %</sm>
-                        </imp>
-                    </p>
-                </div>
-
-            </div>
-            <!--/.row -->
-            <br>
-            <hr>
-        </div>
-        <!--/.container -->
-    </section>
-
-    <!--WORK DESCRIPTION -->
-    <div class="container desc">
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-                <h5><b><i class="fa fa-briefcase" aria-hidden="true"></i> WORK</b></h5>
-            </div>
-            <div class="col-lg-6">
-                <p>
-                    <t>Software Engineering Manager - IT</t><br />
-                    <img src="img/R1.png" class="r1-logo top-2" /> R1 RCM, Inc.
-                    <br /><i class="fa fa-map-marker" aria-hidden="true"></i> Noida, UP, India <br />
-                </p>
-                <p>
-                    <ul>
-                        <li>
-                            <more>Success stories coming soon...</more>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> FEBRUARY 2023 - CURRENT</sm>
-                    </b>
-                </p>
-            </div>
-            <div class="col-lg-6 col-lg-offset-3">
-                <p>
-                    <t>Associate Manager - IT</t><br />
-                    <img src="img/pb-logo.png" class="pb-logo top-2" /> Pitney Bowes, Inc.
-                    <br /><i class="fa fa-map-marker" aria-hidden="true"></i> Pune, MH, India <br />
-                </p>
-                <p>
-                    <ul>
-                        <li>
-                            <more>Managed & migrated applications and data from on-premises to AWS Cloud platform. (20+ countries) Saved more than $1M+ hard savings.</more>
-                        </li>
-                        <li>
-                            <more>
-                                Successfully managed and led Tier3 and DLA product operations and automations for global markets.
-                            </more>
-                        </li>
-                        <li>
-                            <more>
-                                Led and architect PBots Self Service portal for automating operational activities.
-                            </more>
-                        </li>
-                        <li>
-                            <more>
-                                Led and managed T3Online product development in agile methodologies.
-                            </more>
-                        </li>
-                        <li>
-                            <more>Handled application & server specific vulnerability. Successfully improved Rapid 7 security score from 10+ to 1+.</more>
-                        </li>
-                        <li>
-                            <more>
-                                Managed and led a technical team of 11 engineers (direct report) and responsible for their KRA, annual goals and performance appraisals and mentoring.
-                            </more>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> FEBRUARY 2020 - FEBRUARY 2023</sm>
-                    </b>
-                </p>
-            </div>
-            <div class="col-lg-6 col-lg-offset-3">
-                <p>
-                    <t>Assistant Manager - IT</t><br />
-                    <img src="img/flex-logo.png" class="flex-logo top-2" /> flex (formely called Flextronics) <br /> <i class="fa fa-map-marker" aria-hidden="true"></i> Pune, MH, India <br />
-                </p>
-                <p>
-                    <ul>
-                        <li>
-                            <more>
-                                Delivered 3 major releases and more than 50+ sprints successfully on production over a span of 4.5 years.
-                            </more>
-                        </li>
-                        <li>
-                            <more>Successfully led automated order processing (EDI) worth revenue of ~10 million dollars.</more>
-                        </li>
-                        <li>
-                            <more>Managed major release (FY 2018-19) & achieved more than ~110 million-dollar ROI.</more>
-                        </li>
-                        <li>
-                            <more>
-                                Played scrum master role and managed a team of 6 people (direct report) and driven projects in AGILE methodology using Azure DevOps and was responsible for their KRA, annual goals and performance appraisals.
-                            </more>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> JUNE 2015 - FEBRUARY 2020</sm>
-                    </b>
-                </p>
-            </div>
-            <div class="col-lg-6 col-lg-offset-3">
-                <p>
-                    <t>Senior Software Developer (Lead)</t><br />
-                    <img src="img/lnt-logo.png" class="lnt-logo top-2" /> L&T Infotech <br /> <i class="fa fa-map-marker" aria-hidden="true"></i> Pune, MH, India <br />
-                </p>
-                <p>
-                    <ul>
-                        <li>
-                            <more>
-                                Involved in collecting requirements for Elevator business and led & designed electronic service dashboard for Otis Elevator customers using ASP.NET, VB.NET and SQL Server 2012, HTML 5, jQuery, bootstrap, CSS3.
-                            </more>
-                        </li>
-                        <li>
-                            <more>
-                                Documented requirement provided by end customers and designed wireframes, functional specs to finalize UI design and system requirement specifications.
-                            </more>
-                        </li>
-                        <li>
-                            <more>Driven Performance tuning and UAT testing with stakeholders.</more>
-                        </li>
-                        <li>
-                            <more>Led a team of 12 people. (10 Developers & 2 Testers)</more>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> MAY 2014 - JUNE 2015</sm>
-                    </b>
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-lg-offset-3">
-                <p>
-                    <t>Senior Software Developer </t><br />
-                    <img src="img/hex-logo.png" class="hex-logo top-2" /> Hexaware Technologies <br /> <i class="fa fa-map-marker" aria-hidden="true"></i> Pune, MH, India <br />
-                </p>
-                <p>
-                    <ul>
-                        <li>
-                            <more>Successfully provided production support for AMPS products for the client EY.</more>
-                        </li>
-                        <li>
-                            <more>
-                                Successfully automated functional/core processes to support critical business requirements of Identity and Access Management domain.
-                            </more>
-                        </li>
-                        <li>
-                            <more>
-                                Designed application code to support end user requirement/business requirement using ASP.NET, C#, SQL Server 2010, jQuery, CSS.
-                            </more>
-                        </li>
-                        <li>
-                            <more>Assisted in the research, analysis, problems, and coordination of department staff.</more>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> DECEMBER 2010 - MAY 2014</sm>
-                    </b>
-                </p>
-            </div>
-        </div>
-        <hr>
-    </div>
-    <!--/.row -->
-    <br>
-
-    <!--/.container -->
-    <!--AWARDS DESCRIPTION -->
-    <div class="container desc">
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-                <h5><b><i class="fa fa-trophy" aria-hidden="true"></i> AWARDS</b></h5>
-            </div>
-            <div class="col-lg-6">
-                <p class="mt-10">
-                    <t>Ace Award</t><br /> Pitney Bowes, Inc. <img src="img/pb-logo.png" class="pb-logo top-2" /><br />
-                </p>
-                <p>
-                    <more>Leading and effectively managing Tier3 AWS migration and innovating automation tools.</more>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> DECEMBER 2021</sm>
-                    </b>
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-lg-offset-3">
-                <p class="mt-10">
-                    <t>Star Award</t><br /> Pitney Bowes, Inc. <img src="img/pb-logo.png" class="pb-logo top-2" />
-                </p>
-                <p>
-                    <more>
-                        Leading and effectively managing Tier3 and DLA product operations & team and taking smooth hand over of knowledge transition from vendor.
-                    </more>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> MARCH 2021</sm>
-                    </b>
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-lg-offset-3">
-                <p class="mt-10">
-                    <t>Gateway – <small>The leaders League</small></t><br /> flex <img src="img/flex-logo.png" class="flex-logo top-2" />
-                </p>
-                <p>
-                    <more>Leadership Training Program (6 months program)</more>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> FEBRUARY 2018</sm>
-                    </b>
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-lg-offset-3">
-                <p class="mt-10">
-                    <t>Titanium Award</t><br /> flex <img src="img/flex-logo.png" class="flex-logo top-2" />
-                </p>
-                <p>
-                    <more>
-                        Designed a self service web portal and automated all production cases for quicker response. Reduced overall MTR.
-                    </more>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> OCTOBER 2017</sm>
-                    </b>
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-lg-offset-3">
-                <p class="mt-10">
-                    <t>Platinum Award</t><br /> flex <img src="img/flex-logo.png" class="flex-logo top-2" />
-                </p>
-                <p>
-                    <more>Designed SQL Deployment Tool for automatic SQL deployments.</more>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> SEPTEMBER 2016</sm>
-                    </b>
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-lg-offset-3">
-                <p class="mt-10">
-                    <t>Spot Award</t><br /> L&T Infotech <img src="img/lnt-logo.png" class="lnt-logo top-2" />
-                </p>
-                <p>
-                    <more>
-                        For quick understanding of OTIS elevators business and designing outstanding functional requirement specifications.
-                    </more>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> AUGUST 2014</sm>
-                    </b>
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-lg-offset-3">
-                <p class="mt-10">
-                    <t>Ace Award</t><br /> Hexaware Technologies <img src="img/hex-logo.png" class="hex-logo top-2" />
-                </p>
-                <p>
-                    <more>For effectively handling AMPS production support applications and clients.</more>
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p>
-                    <b>
-                        <sm><i class="fa fa-calendar" aria-hidden="true"></i> SEPTEMBER 2012</sm>
-                    </b>
-                </p>
-            </div>
-
-        </div>
-        <!--/.row -->
         <br>
-    </div>
-    <!--/.container -->
-    <!--SKILLS DESCRIPTION -->
-    <div id="skillswrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5><b><i class="fa fa-code" aria-hidden="true"></i> FRONTEND</b></h5>
-                </div>
-
-                <div class="col-lg-2 centered">
-                    <canvas id="html" height="85" width="85"></canvas>
-                    <p>HTML5/CSS3</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="bootstrap" height="85" width="85"></canvas>
-                    <p>Bootstrap 2/3/4</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="jquery" height="85" width="85"></canvas>
-                    <p>jQuery</p>
-                    <br>
-                </div>
-
-                <div class="col-lg-2 centered">
-                    <canvas id="angularjs" height="85" width="85"></canvas>
-                    <p>Angular JS</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 col-lg-offset-3 centered">
-                    <canvas id="angular" height="85" width="85"></canvas>
-                    <p>Angular 11-13</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="typescript" height="85" width="85"></canvas>
-                    <p>TypeScript</p>
-                    <br>
-                </div>
-            </div>
-            <!--/.row -->
-            <br>
-
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5><b><i class="fa fa-code" aria-hidden="true"></i> BACKEND</b></h5>
-                </div>
-
-                <div class="col-lg-2 centered">
-                    <canvas id="net" height="85" width="85"></canvas>
-                    <p>.NET</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="core" height="85" width="85"></canvas>
-                    <p>.NET Core</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="mvc" height="85" width="85"></canvas>
-                    <p>ASP.NET MVC</p>
-                    <br>
-                </div>
-
-                <div class="col-lg-2 centered">
-                    <canvas id="api" height="85" width="85"></canvas>
-                    <p>Web API</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 col-lg-offset-3 centered">
-                    <canvas id="sql" height="85" width="85"></canvas>
-                    <p>SQL Server</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="windows" height="85" width="85"></canvas>
-                    <p>Windows Services</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="wcf" height="85" width="85"></canvas>
-                    <p>WCF/Web Service</p>
-                    <br>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5><b><i class="fa fa-wrench" aria-hidden="true"></i> TOOLS</b></h5>
-                </div>
-
-                <div class="col-lg-2 centered">
-                    <canvas id="tfs" height="85" width="85"></canvas>
-                    <p>TFS</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="gitlab" height="85" width="85"></canvas>
-                    <p>GitLab</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="jira" height="85" width="85"></canvas>
-                    <p>Jira</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="azuredevops" height="85" width="85"></canvas>
-                    <p>Azure DevOps</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 col-lg-offset-3 centered">
-                    <canvas id="servicenow" height="85" width="85"></canvas>
-                    <p>Service Now</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="remedy" height="85" width="85"></canvas>
-                    <p>Remedy</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="pagerduty" height="85" width="85"></canvas>
-                    <p>Pager Duty</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="project" height="85" width="85"></canvas>
-                    <p>MS Projects</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 col-lg-offset-3 centered">
-                    <canvas id="visio" height="85" width="85"></canvas>
-                    <p>MS Visio</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="checkmarx" height="85" width="85"></canvas>
-                    <p>Checkmarx</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="wireframe" height="85" width="85"></canvas>
-                    <p>Wireframes/Lucid</p>
-                    <br>
-                </div>
-            </div>
-            <!--/.row -->
-
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5><b><i class="fa fa-cloud" aria-hidden="true"></i> CLOUD PLATFORMS</b></h5>
-                </div>
-
-                <div class="col-lg-2 centered">
-                    <canvas id="azure" height="85" width="85"></canvas>
-                    <p>Microsoft Azure</p>
-                    <br>
-                </div>
-                <div class="col-lg-2 centered">
-                    <canvas id="aws" height="85" width="85"></canvas>
-                    <p>AWS</p>
-                    <br>
-                </div>
-            </div>
-            <!--/.row -->
-        </div>
-        <!--/.container -->
-    </div>
-    <!--/ #skillswrap -->
-
-    <section id="work" name="work">
-        <!--PORTFOLIO DESCRIPTION -->
-        <div class="container desc">
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5><b><i class="fa fa-briefcase" aria-hidden="true"></i> PORTFOLIO</b></h5>
-                </div>
-                <div class="col-lg-6">
-                    <p>
-                        <t>TIER3, DLA, T3Online, AWS Cloud Migration & Vulnerability Assessment </t><br /> Pitney Bowes, Inc. <img src="img/pb-logo.png" class="pb-logo top-2" /><br /> 2020 - 2023 <br />
-                    </p>
-                    <p>
-                        <ul>
-                            <li>
-                                <more>Managed & migrated applications and data from on-premises to AWS Cloud platform. (20+ countries) Saved more than $1M+ hard savings.</more>
-                            </li>
-                            <li>
-                                <more>
-                                    Successfully managed and led Tier3 and DLA product operations and automations for global markets.
-                                </more>
-                            </li>
-                            <li>
-                                <more>
-                                    Led and architect PBots Self Service portal for automating operational activities.
-                                </more>
-                            </li>
-                            <li>
-                                <more>
-                                    Led and managed T3Online product development in agile methodologies.
-                                </more>
-                            </li>
-                            <li>
-                                <more>Handled application & server specific vulnerability. Successfully improved Rapid 7 security score from 10+ to 1+.</more>
-                            </li>
-                            <li>
-                                <more>
-                                    Managed and led a technical team of 11 engineers (direct report) and responsible for their KRA, annual goals and performance appraisals and mentoring.
-                                </more>
-                            </li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-3 box-shadow">
-                    <p><b>Technologies:</b></p>
-                    <p>
-                        <more>ASP.NET Core, ASP.NET MVC, C#.NET, Web API, SQL Server 2019, Windows Services, Web Services, WCF, Boostrap 4.0, Angular 13, TypeScript, jQuery, HTML5/CSS3</more>
-                    </p>
-
-                    <p><b>Managerial Skills:</b></p>
-                    <p>
-                        <more>Resource Planning, forecasting & allocation, OKRs, SWOT Analysis, Conflict Management, Risk Assessment, Reporting</more>
-                    </p>
-
-                    <p><b>Familiar:</b></p>
-                    <p>
-                        <more>
-                            MS Projects, MS Visio, Jira, TFS, GitLab, Remedy, Checkmarx, Jenkins, Ansible, Terraforms, CI-CD, AWS - EC2, Fargate, Container Services, S3 Bucket, Backups, Vaults, CloudWatch, MGN Service, CloudEndure, Lambda Fuction, Athena, SMS Service,
-                            VPC, Subnets, Security Policies
-                        </more>
-                    </p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3 portfolio-border">
-                    <p>
-                        <t>COMMAND CENTER </t><br /> flex <img src="img/flex-logo.png" class="flex-logo top-2" /><br /> 2015 - 2020 <br />
-                    </p>
-                    <p>
-                        <ul>
-                            <li>
-                                <more>Played agile scrum master role and responsible for solution architect and delivery of the product by leveraging Azure DevOps & CI/CD pipeline.</more>
-                            </li>
-                            <li>
-                                <more>Involved in requirement gathering to collect Supply Chain Management business.</more>
-                            </li>
-                            <li>
-                                <more>Delivered 3 major releases and more than 50+ sprints successfully on production over a span of 4.5 years.</more>
-                            </li>
-                            <li>
-                                <more>Successfully led automated order processing (EDI) worth revenue of ~10 million dollars.</more>
-                            </li>
-                            <li>
-                                <more>Managed major release (FY 2018-19) & achieved more than ~110 million-dollar ROI.</more>
-                            </li>
-                            <li>
-                                <more>Developed applications in .NET stack and on Azure platform.</more>
-                            </li>
-                            <li>
-                                <more>
-                                    Played scrum master role and managed a team of 6 people (direct report) and driven projects in AGILE methodology using Azure DevOps and was responsible for their KRA, annual goals and appraisals.
-                                </more>
-                            </li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-3 portfolio-border box-shadow">
-                    <p><b>Technologies:</b></p>
-                    <p>
-                        <more>ASP.NET MVC, C#.NET, SQL Server 2019, Boostrap 4.0, Angular 13, TypeScript, jQuery, HTML5/CSS3</more>
-                    </p>
-
-                    <p><b>Managerial Skills:</b></p>
-                    <p>
-                        <more>Scrum Master, Resource Planning, forecasting & allocation, OKRs, SWOT Analysis, Conflict Management, Risk Assessment, Reporting</more>
-                    </p>
-
-                    <p><b>Familiar:</b></p>
-                    <p>
-                        <more>TFS, Azure DevOps, CI-CD, Checkmarx, MS Visio, ServiceNow, Azure - Web Roles, Worker Roles, Web Apps, Azure Functions, Blob, Queues, Tables </more>
-                    </p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3 portfolio-border">
-                    <p>
-                        <t>ESERVICE 2.0 </t><br /> L&T Infotech <img src="img/lnt-logo.png" class="lnt-logo top-2" /><br /> 2014 - 2015 <br />
-                    </p>
-                    <p>
-                        <ul>
-                            <li>
-                                <more>Involved in requirement gathering to collect/understand Elevator business.</more>
-                            </li>
-                            <li>
-                                <more>Documented new requirements provided by end customers and designing draft sketches to finalize UI design for the end customer.</more>
-                            </li>
-                            <li>
-                                <more>Designed and maintained application code to support end user requirements.</more>
-                            </li>
-                            <li>
-                                <more>Assisted with the technical and functional knowledge of the team during the development and/or maintenance of the software product.</more>
-                            </li>
-                            <li>
-                                <more>Effectively handled client calls/issues irrespective of geographic Locations.</more>
-                            </li>
-                            <li>
-                                <more>Managed & Led team of 12 people for redesign project.</more>
-                            </li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-3 portfolio-border box-shadow">
-                    <p><b>Technologies:</b></p>
-                    <p>
-                        <more>ASP.NET MVC, C#.NET, VB.NET, SQL Server 2012, Boostrap 2.0, jQuery, HTML5/CSS3</more>
-                    </p>
-
-                    <p><b>Managerial Skills:</b></p>
-                    <p>
-                        <more>Scrum Master, Resource Planning, forecasting & allocation, Risk Assessment, Reporting</more>
-                    </p>
-
-                    <p><b>Familiar:</b></p>
-                    <p>
-                        <more>TFS, MS Visio, Wireframes, Lucid </more>
-                    </p>
-                </div>
-
-                <div class="col-lg-6 col-lg-offset-3 portfolio-border">
-                    <p>
-                        <t>AMPS (Account Management & Provisioning System) </t><br /> Hexaware Technologies <img src="img/hex-logo.png" class="hex-logo top-2" /><br /> 2010 - 2014 <br />
-                    </p>
-                    <p>
-                        <ul>
-                            <li>
-                                <more>Successfully implemented interface programs to interact with other platforms and enhance overall functionality of an application.</more>
-                            </li>
-                            <li>
-                                <more>Successfully automated core functionality of an application to support business critical aspects.</more>
-                            </li>
-                            <li>
-                                <more>Designed SQL scripts to automated workflow which reduced overall cost of resolution and SLA agreed.</more>
-                            </li>
-                            <li>
-                                <more>Resolved end user queries/issues in Application at L3/L4 level within defined SLAs.</more>
-                            </li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-3 portfolio-border box-shadow">
-                    <p><b>Technologies:</b></p>
-                    <p>
-                        <more>ASP.NET, C#.NET, SQL Server 2012</more>
-                    </p>
-
-                    <p><b>Familiar:</b></p>
-                    <p>
-                        <more>TFS, Remedy, ERT, ORT, ITIL Processes, Outage handling </more>
-                    </p>
-                </div>
-
-            </div>
-            <!--/.row -->
-            <br>
-            <br>
-        </div>
-        <!--/.container -->
-    </section>
-
-    <section id="contact" name="contact">
-        <!--FOOTER DESCRIPTION -->
-        <div id="footwrap">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-2">
-                        <h5><b><i class="fa fa-address-card-o white-color" aria-hidden="true"></i> CONTACT</b></h5>
-                    </div>
-                    <div class="col-lg-4">
-                        <p>
-                            <t><i class="fa fa-envelope-o white-color" aria-hidden="true"></i> Email</t><br /> <a href="mailto:avinash_dhumal@yahoo.com">avinash_dhumal@yahoo.com</a> <br />
-                        </p>
-                        <p>
-                            <t><i class="fa fa-map-marker white-color" aria-hidden="true"></i> Address</t><br /> B203, Lotus Laxmi 1 <br /> Mukai Chowk <br /> Ravet-Kiwale <br /> Pune, MH, INDIA - 412101
-                        </p>
-                        <p>
-                            <t><i class="fa fa-phone white-color" aria-hidden="true"></i> Phone</t><br /> <a href="tel:+917798406759">+91 77984-06759</a> <br />
-                        </p>
-                        <p>
-                            <t>Social Links</t><br />
-                            <a href="https://www.facebook.com/avinash.dhumal.03/" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.linkedin.com/in/avinash-dhumal/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <p>
-                            <sm>CONTACT FORM</sm>
-                        </p>
-
-                        <form class="contact-form" role="form" id="contact-form">
-                            <input type="hidden" name="contact_number">
-                            <div class="form-group">
-                                <label for="contact-name">Your Name</label>
-                                <input type="text" name="user_name" class="form-control" id="user_name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                                <div class="validate"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-email">Your Email</label>
-                                <input type="email" name="user_email" class="form-control" id="user_email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                                <div class="validate"></div>
-                            </div>
-                            <!--<div class="form-group">
-                                <label for="contact-subject">Subject</label>
-                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-                                <div class="validate"></div>
-                            </div>-->
-
-                            <div class="form-group">
-                                <label for="contact-message">Your Message</label>
-                                <textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for me"></textarea>
-                                <div class="validate"></div>
-                            </div>
-
-                            <div class="loading"></div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                            <div class="form-send">
-                                <button type="submit" id="send" value="Send" class="btn btn-large">Send Message</button>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-                <!--/.row -->
-            </div>
-            <!--/.container -->
-        </div>
-        <!--/ #footer -->
-    </section>
-
-    <div id="copyrights">
-        <div class="container">
-            <p>
-                &copy; Copyrights <strong>Avinash</strong>. All Rights Reserved
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.png" class="img-fluid img-fluid-1" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Engineering Manager</h3>
+            <p class="fst-italic">
+              R1 RCM, Noida, UP, India (Remote)
             </p>
-            <div class="credits">
-                <!--
-                  You are NOT allowed to delete the credit link to TemplateMag with free version.
-                  You can delete the credit link only if you bought the pro version.
-                  Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/kelvin-bootstrap-resume-template/
-                  Licensing information: https://templatemag.com/license/
-                -->
-                Created with Kelvin template by <a href="https://templatemag.com/">TemplateMag</a>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <a
+                      href="tel:+917798406759">+91-77984-06759</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pune, MH, India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a
+                      href="mailto:avinash_dhumal@yahoo.com">avinash_dhumal@yahoo.com</a>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor Of Engineering
+                      (I.T.)</span></li>
+                </ul>
+              </div>
             </div>
+            <p>
+              <b>Team Management</b> Orchestrating and overseeing two Scrum teams.
+              <br><br>
+              <b>Strategic Alignment</b>: Acting as a liaison between technology and management.
+              <br><br>
+              <b>Innovation Driver</b>: Leading the creation and improvement of healthcare products.
+              <br><br>
+              <b>Team Development</b>: Pioneering performance reviews, mentoring programs, and ongoing guidance to
+              foster a high-performing team.
+              <br><br>
+              <b>Resource Management</b>: Overseeing resource allocation and budgeting, optimizing resource utilization.
+            </p>
+            <p class="float-right"><a href="#">Download CV</a></p>
+          </div>
         </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Awards</h2>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span class="fs-24">Star Award</span>
+              <p><strong>R1 RCM, Inc.</strong><br>Operating with purpose</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span class="fs-24">Ace Award</span>
+              <p><strong>Pitney Bowes, Inc.</strong><br>Leading AWS Migration</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span class="fs-24">Star Award</span>
+              <p><strong>Pitney Bowes, Inc.</strong><br>Leading mailing product's operations</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span class="fs-24">Gateway</span>
+              <p><strong>flex</strong><br>Leadership program (6 months)</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span class="fs-24">Titanium Award</span>
+              <p><strong>flex</strong><br>Leading self service automation</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span class="fs-24">Platinum Award</span>
+              <p><strong>flex</strong><br>Release process improvements</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span class="fs-24">Spot Award</span>
+              <p><strong>L&T Infotech</strong><br>Otis Elevators: Understand, Desgin & Excel</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-award"></i>
+              <span class="fs-24">Ace Award</span>
+              <p><strong>Hexaware Technologies</strong><br>Effective client handling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6 skill-set" data-aos="fade-up">
+            <h5><strong><i class="bi bi-braces-asterisk"></i>&nbsp;&nbsp;Frontend & Backend</strong></h5>
+            <hr><br>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i>HTML5/CSS3</li>
+                  <li><i class="bi bi-chevron-right"></i>jQuery</li>
+                  <li><i class="bi bi-chevron-right"></i>Angular JS/Angular 11-13</li>
+                  <li><i class="bi bi-chevron-right"></i>.NET/.NET Core</li>
+                  <li><i class="bi bi-chevron-right"></i>Web API</li>
+                  <li><i class="bi bi-chevron-right"></i>Windows Services</li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i>Bootstrap (Responsive Design)</li>
+                  <li><i class="bi bi-chevron-right"></i>Typescript</li>
+                  <li><i class="bi bi-chevron-right"></i>ASP.NET MVC</li>
+                  <li><i class="bi bi-chevron-right"></i>Microsoft SQL Server</li>
+                  <li><i class="bi bi-chevron-right"></i>WCF/Web Services</li>
+                  <li><i class="bi bi-chevron-right"></i>C#/VB.NET</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 skill-set" data-aos="fade-up">
+            <h5><strong><i class="bi bi-pen"></i>&nbsp;&nbsp;Tools</strong></h5>
+            <hr><br>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i>Azure DevOps</li>
+                  <li><i class="bi bi-chevron-right"></i>TFS</li>
+                  <li><i class="bi bi-chevron-right"></i>Service Now</li>
+                  <li><i class="bi bi-chevron-right"></i>Pager Duty</li>
+                  <li><i class="bi bi-chevron-right"></i>MS Projects</li>
+                  <li><i class="bi bi-chevron-right"></i>Black Duck & Coverity</li>
+                  <li><i class="bi bi-chevron-right"></i>Wireframes/Lucid</li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i>GitLab</li>
+                  <li><i class="bi bi-chevron-right"></i>Jira</li>
+                  <li><i class="bi bi-chevron-right"></i>Remedy</li>
+                  <li><i class="bi bi-chevron-right"></i>AppDynamics</li>
+                  <li><i class="bi bi-chevron-right"></i>Power BI</li>
+                  <li><i class="bi bi-chevron-right"></i>Checkmarx</li>
+                  <li><i class="bi bi-chevron-right"></i>MS Visio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 skill-set" data-aos="fade-up">
+            <h5><strong><i class="bi bi-kanban"></i>&nbsp;&nbsp;Leadership & Management</strong></h5>
+            <hr><br>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i>Team Leader</li>
+                  <li><i class="bi bi-chevron-right"></i>Conflict Management</li>
+                  <li><i class="bi bi-chevron-right"></i>Product Management</li>
+                  <li><i class="bi bi-chevron-right"></i>Decision Making</li>
+                  <li><i class="bi bi-chevron-right"></i>Resource Management</li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i>Mentoring & Coaching</li>
+                  <li><i class="bi bi-chevron-right"></i>Problem Solving</li>
+                  <li><i class="bi bi-chevron-right"></i>Project Management</li>
+                  <li><i class="bi bi-chevron-right"></i>Risk Management </li>
+                  <li><i class="bi bi-chevron-right"></i>Technical Expertise </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 skill-set" data-aos="fade-up">
+            <h5><strong><i class="bi bi-cloudy"></i>&nbsp;&nbsp;Platforms</strong></h5>
+            <hr><br>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i>Microsoft Azure</li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i>AWS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Avinash Dhumal</h4>
+              <p><em>I am a seasoned <b>Technical People Manager</b> with <b><span class="exp"></span>+ years</b> years in software architecture, Azure/AWS Cloud,
+                  and Microsoft Tech stack. As <b>Engineering Manager</b> at <b>R1 RCM Inc.</b>, I lead innovative patient experience
+                  solutions.
+                </em></p>
+              <ul>
+                <li>Pune, Maharashtra, India</li>
+                <li><a href="mailto:avinash_dhumal@yahoo.com">avinash_dhumal@yahoo.com</a></li>
+                <li><a href="tel:+917798406759">+91-77984-06759</a></li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Engineering</h4>
+              <h5>2007 - 2010</h5>
+              <p><em>Dr. D. Y. Patil College of Engineering, Pune University</em></p>
+              <p>Stream: Information Technology</p>
+              <p>Percentile: 65.13%</p>
+            </div>
+            <div class="resume-item">
+              <h4>Diploma</h4>
+              <h5>2004 - 2007</h5>
+              <p><em>Maharashtra State Board of Technical Education</em></p>
+              <p>Stream: Information Technology</p>
+              <p>Percentile: 70.17%</p>
+            </div>
+            <div class="resume-item">
+              <h4>S.S.C.</h4>
+              <h5>1994 - 2004</h5>
+              <p><em>Pune Vidyapeeth</em></p>
+              <p>Stream: -- NA --</p>
+              <p>Percentile: 72.80%</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Engineering Manager</h4>
+              <h5>2023 - Present</h5>
+              <p><em>R1 RCM, Noida, UP, India (Remote) </em></p>
+              <ul>
+                <li>Successfully orchestrating and overseeing the management of two dynamic Scrum teams, simultaneously
+                  driving the development of two critical healthcare products.</li>
+                <li>Led a feature development initiative that resulted in a remarkable cost reduction of $550,000,
+                  enhancing the overall patient experience.</li>
+                <li>Revamped a key feature to streamline post-discharge workflows for operators, centralizing patient
+                  information from various hospitals, leading to a significant cost reduction of $100,000.</li>
+                <li>Managed the migration of the Patient Communication Platform to Genesys PureCloud, leveraging Azure
+                  cloud and .NET technologies, delivering enhanced communication and a value increase of $270,000.</li>
+                <li>Acting as a vital bridge between technology and management, aligning technical solutions with
+                  overarching business goals and strategies.</li>
+                <li>Pioneering performance reviews, mentoring programs, and ongoing guidance to nurture a
+                  high-performing
+                  team, promoting professional growth, and fostering a culture of continuous improvement.</li>
+                <li>Demonstrating effective resource allocation and budget management, optimizing resource utilization
+                  to
+                  consistently deliver projects on time and within budget constraints.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Associate Manager</h4>
+              <h5>2020 - 2023</h5>
+              <p><em>Pitney Bowes, Inc., Pune, MH, India</em></p>
+              <ul>
+                <li>Achieved significant cost savings of over $1M+ by efficiently managing and migrating applications
+                  and
+                  data from on-premises environments to the AWS Cloud platform across more than 20 countries.</li>
+
+                <li>Spearheaded Tier3 and DLA product operations and automation initiatives on a global scale.</li>
+
+                <li>Architected the PBots Self Service portal, a transformative solution for automating operational
+                  activities.</li>
+
+                <li>Led the development of the T3Online product using agile methodologies, fostering a collaborative and
+                  adaptable environment for successful product delivery.</li>
+
+                <li>Consistently improved security (vulnerability) with a remarkable reduction in the Rapid 7 security
+                  score
+                  from 10+ to 1+.</li>
+
+                <li>Additionally, skillfully managed and mentored a team of 11 engineers, overseeing their performance,
+                  growth, and development.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Assistant Manager</h4>
+              <h5>2015 - 2020</h5>
+              <p><em>flex, Pune, MH, India</em></p>
+              <ul>
+                <li>Accomplished 3 major software releases and over 50 successful sprints in a 4.5-year tenure,
+                  demonstrating consistent delivery excellence.</li>
+                <li>Led and optimized automated order processing (EDI) operations, contributing to a substantial revenue
+                  stream of approximately $10 million.</li>
+                <li>Orchestrated a pivotal major release in FY 2018-19, resulting in an impressive ROI surpassing $110
+                  million, showcasing strategic leadership and financial acumen.</li>
+                <li>Excelled as a Scrum Master, overseeing a proficient team of 6 direct reports, driving Agile projects
+                  using Azure DevOps, and excelling in KRA management, annual goal setting, and performance appraisals.
+                </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Senior Software Engineer</h4>
+              <h5>2014 - 2015</h5>
+              <p><em>L&T Infotech, Pune, MH, India</em></p>
+              <ul>
+                <li>Spearheaded the collection of vital requirements for the Elevator business, culminating in the
+                  creation of a cutting-edge electronic service dashboard for Otis Elevator customers.
+                </li>
+                <li>
+                  Leveraged a tech stack comprising ASP.NET, VB.NET, SQL Server 2012, HTML5, jQuery, bootstrap, and CSS3
+                  to deliver a robust and dynamic solution.
+                </li>
+                <li>
+                  Demonstrated meticulous attention to detail by documenting end customer requirements and
+                  translating them into wireframes, functional specifications, and system requirement specifications.
+                </li>
+                <li>
+                  Drove the optimization of system performance through rigorous performance tuning and facilitated User
+                  Acceptance Testing (UAT) in collaboration with stakeholders.
+                </li>
+                <li>
+                  Exhibited strong leadership skills by overseeing a diverse team of 12 individuals, comprising 10
+                  developers and 2 testers.
+                </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Senior Software Engineer</h4>
+              <h5>2010 - 2014</h5>
+              <p><em>Hexaware Technologies, Pune, MH, India</em></p>
+              <ul>
+                <li>Provided seamless production support for EY's AMPS (Identity Management) products, ensuring
+                  uninterrupted business
+                  operations.</li>
+                <li>Streamlined critical processes in the Identity and Access Management domain through effective
+                  automation, enhancing efficiency and security.</li>
+                <li>Developed robust application code utilizing ASP.NET, C#, SQL Server 2010, jQuery, and CSS to meet
+                  end user and business needs effectively.</li>
+                <li>Played a pivotal role in research, analysis, problem-solving, and departmental coordination,
+                  contributing to a well-rounded support system.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>"Crafting innovative solutions to complex problems, one project at a time, and consistently exceeding
+            expectations."</p>
+        </div>
+        <br>
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-r1">R1 RCM</li>
+              <li data-filter=".filter-pb">Pitney Bowes</li>
+              <li data-filter=".filter-flex">flex</li>
+              <li data-filter=".filter-landt">L&T Infotech</li>
+              <li data-filter=".filter-hexaware">Hexaware Technologies</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-hexaware">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/amps.jpg" class="img-fluid portfolio-img" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="assets/img/portfolio/amps.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Account Management & Provisioning System, Enrst & Young"><i class="bx bx-plus"></i></a> -->
+                <a href="portfolio-details.html"
+                  title="Account Management & Provisioning System, Enrst & Young | More Details..."><i
+                    class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-landt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/eservice.jpg" class="img-fluid portfolio-img" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="assets/img/portfolio/eservice.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="eService, Otis Elevators"><i class="bx bx-plus"></i></a> -->
+                <a href="portfolio-details.html" title="eService, Otis Elevators | More Details..."><i
+                    class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-flex">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/commandcenter.jpg" class="img-fluid portfolio-img" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="assets/img/portfolio/commandcenter.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Command Center, flex - A Supply Chain Company"><i class="bx bx-plus"></i></a> -->
+                <a href="portfolio-details.html"
+                  title="Command Center, flex - A Supply Chain Company | More Details..."><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pb">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/tier3.jpg" class="img-fluid portfolio-img" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="assets/img/portfolio/tier3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tier3, DLA - Pitney Bowes, Inc."><i class="bx bx-plus"></i></a> -->
+                <a href="portfolio-details.html" title="Tier3, DLA - Pitney Bowes, Inc. | More Details..."><i
+                    class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pb">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/dla.jpg" class="img-fluid portfolio-img" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="assets/img/portfolio/dla.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Tier3, DLA - Pitney Bowes, Inc."><i class="bx bx-plus"></i></a> -->
+                <a href="portfolio-details.html" title="Tier3, DLA - Pitney Bowes, Inc. | More Details..."><i
+                    class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-r1">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/r1access.jpg" class="img-fluid portfolio-img" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="assets/img/portfolio/r1access.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="R1Access - Front Patient Experience, R1 RCM, Inc."><i class="bx bx-plus"></i></a> -->
+                <a href="portfolio-details.html"
+                  title="R1Access - Front Patient Experience, R1 RCM, Inc. | More Details..."><i
+                    class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-r1">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/r1contact.jpg" class="img-fluid portfolio-img" alt="">
+              <div class="portfolio-links">
+                <!-- <a href="assets/img/portfolio/r1contact.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="R1Contact - Front Patient Experience, R1 RCM, Inc."><i class="bx bx-plus"></i></a> -->
+                <a href="portfolio-details.html"
+                  title="R1Contact - Front Patient Experience, R1 RCM, Inc. | More Details..."><i
+                    class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="assets/img/testimonials/sagar.jpg" class="testimonial-img" alt="">
+                <h3>Sagar Belkhede</h3>
+                <h4>Senior Manager, Pitney Bowes, Inc.</h4>
+                <br>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Avinash has a great combination of skillsets required for technical as well as people management. His
+                  communication and presentation skills equally complement his expertise. He has exposure on managing
+                  Development as well as Operations team. He does a fine act of balancing both the organisation
+                  requirements and employee expectations to get maximum output from the team. His diligence towards the
+                  completeness and quality of his team's output is worth mentioning. His strive for ensuring the
+                  development of each of his team members helps him gain the trust of his team and management equally.
+                  Along with this he is equally hands on in technical support and is a key resource for the team from
+                  technical perspective as well. He would truly be an asset for any team or organisation he works for.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/testimonials/arvind.jpg" class="testimonial-img" alt="">
+                <h3>Arvind Ramaswamy</h3>
+                <h4>Chief Solution Architect, Lab-Informatics</h4>
+                <br>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I was highly impressed with Avinash when he showcased many Automation Tools and implemented Ideas that
+                  he had worked on independently (over and above the official assigned projects) as part of an informal
+                  Software Club that I had created. Later on I got the opportunity to work with him closely for almost 2
+                  years, on a common official project. Avinash is a go-getter, highly self-motivated and always eager to
+                  learn and implement newer technologies. He's also very enthusiastic when it comes to sharing his
+                  knowledge and mentoring the rest of the team members including freshers. He loves to take up
+                  challenging projects and lead the team. Along with Technical knowledge, he was also very eager to
+                  learn the domain (Supply Chain Management) and understood thoroughly the complete functionality and
+                  user requirements, features-to-come & Customer expectations. He is highly methodical and meticulous
+                  when it comes to processes and standards, documentation, deliverables. In short Avinash was the Best
+                  Team member I never had. I wish him all the Best for a wonderful future and thank him for all the
+                  things I got to learn from him.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/testimonials/gaurav.jpg" class="testimonial-img" alt="">
+                <h3>Gaurav Navale</h3>
+                <h4>Advisory Engineer, Pitney Bowes</h4>
+                <br>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I rarely come across real talents who stand out like Avinash. I had the pleasure of working with
+                  Avinash continuously in three organizations.
+                  Avinash's ability to handle multiple projects was unlike any I’ve seen before and made a dramatic
+                  increase in the productivity level of our company.
+                  He always kept the team motivated and shared knowledge. I believe he is one of the best managers I
+                  ever had, as his people skills are highly developed.
+                  He most of times deals with the toughest clients effortlessly.
+                  As a team member or a leader, Avinash earns my highest recommendation.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/testimonials/nadia.jpg" class="testimonial-img" alt="">
+                <h3>Nadia Abdullah</h3>
+                <h4>Business Analyst, flex</h4>
+                <br>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Avinash is great to work with, I find him energetic and optimistic in all situation. The period which
+                  we were working closely virtually (different location) considering the differences in time and culture
+                  work habit, it was never a hindrance to the project success; In fact, we were one of the best team in
+                  the Organization. Avinash shows strong technical skill sets through continuous planning and
+                  implementing of new technology, platforms and whichever that deems fit for the system to stay ahead.
+                  He possessed great communication skill, which he demonstrates while communicating with different
+                  levels of personal; and on top of that he is capable to lead, not only his team members but also
+                  others whenever is necessary for the success of the project. In short, I highly recommend Avinash as
+                  he is a valuable resource.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/testimonials/preetam.jpg" class="testimonial-img" alt="">
+                <h3>Preetam Kale</h3>
+                <h4>Senior Product Manager, Wasoko</h4>
+                <br>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Avinash is one of the best Technical Leads I have worked with.
+                  Critical thinking, Core technical knowledge, leadership, Commitment to work are his Strengths.
+                  He is very thorough in planning and execution of the projects and he takes end to end ownership of all
+                  the projects. And when he gets some time after doing all this, he does Innovative side projects for
+                  the company. He is an asset to the company he works for.
+                  He is always learning something new and implementing it. In short he is always inspiring his teammates
+                  to improve and do better.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/testimonials/zaidi.jpg" class="testimonial-img" alt="">
+                <h3>Zaidi Abdul Hamid</h3>
+                <h4>Senior Solution Manager, flex</h4>
+                <br>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I have known Avinash since the day he join our Project in Flex and the very first impression that he
+                  made within the project team are truly remarkable. Avinash have always shown his dedication and focus
+                  on delivering all tasks on hand. Avinash is someone that you can rely on in terms of architecture
+                  advice, coordination and development deliverable. All the best on your future endeavoring and success
+                  in work and life.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/testimonials/rodrigo.jpg" class="testimonial-img" alt="">
+                <h3>Rodrigo Camargo</h3>
+                <h4>Director, Boyd Corp</h4>
+                <br>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I had the opportunity to work with Avinash in many projects at Flex. In that time, Avinash displayed
+                  professionalism, understanding of his role, and an innate ability to organize projects and teams.
+                  From a professionalism standpoint, Avinash is a project manager/scrum master that understands the
+                  needs of the organization both from a product value standpoint but also from a human and team
+                  viewpoint. Because of this, he is able to maintain a professional persona; being calm, collected, and
+                  still listening/learning, even when under tremendous pressure from customers or the company itself.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/testimonials/horst.jpg" class="testimonial-img" alt="">
+                <h3>Horst Herberger</h3>
+                <h4>Lead, Enrst & Young</h4>
+                <br>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Avinah Dhumal is an absolute reliable person with a fantastic attitude. He is absolute engaged and
+                  committed. His communication is clear and he is very much focused on the subjects. He is a trusted
+                  advisor and excellent Subject Matter Expert. He has a great spirit and is very much proactive
+                  oriented. Avinash worked several years in my team and I can just highly recommend him.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>45 Shashwat Avenue, Pune, Maharashtra, India 411033</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:avinash_dhumal@yahoo.com">avinash_dhumal@yahoo.com</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p> <a href="tel:+917798406759">+91-77984-06759</a></p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15122.320035601882!2d73.7344756!3d18.6379511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbecea39ba27%3A0xb8b344ba52e69140!2s45%20Shashwat%20Avenue!5e0!3m2!1sen!2sin!4v1694941825677!5m2!1sen!2sin"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="contact-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="user_name" class="form-control" id="user_name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="user_email" id="user_email" required>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div> -->
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="15" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message">Failed to send message</div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" id="send" value="Send">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
     </div>
+  </footer><!-- End  Footer -->
 
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/php-mail-form/validate.js"></script>
-    <script src="lib/chart/chart.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- EmailJs library -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+   <!-- EmailJs library -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" async></script>
+
 </body>
+
 </html>

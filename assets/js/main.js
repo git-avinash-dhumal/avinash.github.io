@@ -264,5 +264,9 @@
 jQuery(document).ready(function ($) {
 
   // $('.exp').text(Math.round((monthDiff(new Date('2010-12-01'), new Date()) / 12) * 10) / 10 + '+');
-  $('.exp').text(new Date(new Date() - new Date('2010-12-01')).getFullYear() - 1970);
+  //$('.exp').text(new Date(new Date() - new Date('2010-12-01')).getFullYear() - 1970);
 })
+
+function showProjectDetails() {
+  $('#modalProjectDetails').trigger('focus');
+};

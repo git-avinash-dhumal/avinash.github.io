@@ -660,7 +660,13 @@ section {
   box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+.portfolio-details .portfolio-info-1 {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+}
+
+.portfolio-details .portfolio-info h3,
+.portfolio-details .portfolio-info-1 h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -675,6 +681,16 @@ section {
 }
 
 .portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-info-1 ul {
+  padding: 0;
+  font-size: 15px;
+  padding: 0px 30px;
+}
+
+.portfolio-details .portfolio-info-1 ul li+li {
   margin-top: 10px;
 }
 
@@ -1131,4 +1147,17 @@ section {
 .list-contact {
   list-style: none;
   margin-left: -20px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.tech-padding {
+  padding: 0px 30px;
+}
+
+.tech-padding li>i {
+  color: #149ddd;
+  line-height: 0;
 }

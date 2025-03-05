@@ -77,7 +77,7 @@
                             <i class="bx bx-comment"></i><span>Testimonials</span>
                         </a>
                     </li>
-                    <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+                    <li><a href="#blogs" class="nav-link scrollto"><i class="bx bi-medium"></i> <span>Blogs</span></a></li>
                     <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
                 </ul>
             </nav><!-- .nav-menu -->
@@ -1013,44 +1013,36 @@
 
             </div>
         </section><!-- End Testimonials Section -->
+        <!-- ======= Blog Section ======= -->
+        <section id="blogs" class="blogs section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Blogs</h2>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <div id="medium-blogs">
+                        <h2>Latest Medium Blogs</h2>
+                        <div id="blog-list" class="mt-3">Loading...</div>
+                    </div>
+                </div>
+
+                <!-- Read More Section -->
+                <div class="read-more">
+                    <a href="https://medium.com/@avinash.dhumal" target="_blank">
+                        Read More Articles . . .
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog Section -->
         <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact section-bg">
+        <section id="contact" class="contact">
             <div class="container">
 
                 <div class="section-title">
                     <h2>Contact</h2>
                 </div>
-
-                <div class="row" data-aos="fade-in">
-
-                    <!--<div class="col-lg-5 d-flex align-items-stretch">
-                      <div class="info">
-                        <div class="address">
-                          <i class="bi bi-geo-alt"></i>
-                          <h4>Location:</h4>
-                          <p>45 Shashwat Avenue, Pune, Maharashtra, India 411033</p>
-                        </div>
-
-                        <div class="email">
-                          <i class="bi bi-envelope"></i>
-                          <h4>Email:</h4>
-                          <p><a href="mailto:avinash.dhumal@hotmail.com">avinash.dhumal@hotmail.com</a></p>
-                        </div>
-
-                        <div class="phone">
-                          <i class="bi bi-phone"></i>
-                          <h4>Call:</h4>
-                          <p> <a href="tel:+917798406759">+91-77984-06759</a> </p>
-                        </div>
-
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15122.320035601882!2d73.7344756!3d18.6379511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbecea39ba27%3A0xb8b344ba52e69140!2s45%20Shashwat%20Avenue!5e0!3m2!1sen!2sin!4v1694941825677!5m2!1sen!2sin"
-                          frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen
-                          referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div> -->
-
-                </div>
-
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                     <form method="post" role="form" class="php-email-form" id="contact-form">
                         <div class="row">
@@ -1063,10 +1055,6 @@
                                 <input type="email" class="form-control" name="user_email" id="user_email" required>
                             </div>
                         </div>
-                        <!-- <div class="form-group">
-                            <label for="name">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" required>
-                          </div> -->
                         <div class="form-group">
                             <label>Message</label>
                             <textarea class="form-control" name="message" rows="15" required></textarea>
@@ -1079,9 +1067,6 @@
                         <div class="text-center"><button type="submit" id="send" value="Send">Send Message</button></div>
                     </form>
                 </div>
-
-            </div>
-
             </div>
         </section><!-- End Contact Section -->
     </main><!-- End #main -->
@@ -1173,7 +1158,48 @@
             }
 
             $('.exp').text(yearDiff + '.' + monthDiff);
+
+            fetchMediumBlogs();
         })
+
+        async function fetchMediumBlogs() {
+            const mediumRSS = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@avinash.dhumal';
+            try {
+                let response = await fetch(mediumRSS);
+                let data = await response.json();
+
+                if (data.status === 'ok') {
+                    let blogList = document.getElementById("blog-list");
+                    blogList.innerHTML = ""; // Clear loading text
+
+                    data.items.slice(0, 10).forEach(blog => {
+                        // Extract image from description
+                        let tempDiv = document.createElement("div");
+                        tempDiv.innerHTML = blog.description; // Convert string to HTML
+                        let imgElement = tempDiv.querySelector("img"); // Find first image
+                        let imgSrc = imgElement ? imgElement.src : 'https://via.placeholder.com/60'; // Default if no image
+
+                        // Extract text snippet from description
+                        let descriptionText = tempDiv.innerText.replace(/\s+/g, ' ').trim(); // Remove extra spaces
+                        let descriptionSnippet = descriptionText.substring(0, 150) + "..."; // Limit to 50 characters
+
+                        let blogItem = document.createElement("div");
+                        blogItem.className = "blog-item d-flex";
+                        blogItem.innerHTML = `
+                                <img src="${imgSrc}" class="blog-icon" alt="Blog Image">
+                                <div>
+                                    <div class="blog-title"><a href="${blog.link}" target="_blank">${blog.title}</a></div>
+                                    <div class="blog-snippet">${descriptionSnippet}</div>
+                                </div>
+                            `;
+                        blogList.appendChild(blogItem);
+                    });
+                }
+            } catch (error) {
+                console.error("Error fetching Medium blogs:", error);
+                document.getElementById("blog-list").innerHTML = `<p class="text-danger">Failed to load blogs.</p>`;
+            }
+        }
     </script>
 
     <!-- EmailJs library -->
